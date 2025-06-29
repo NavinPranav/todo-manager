@@ -1,0 +1,49 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Complete project proposal",
+      "description": "Finalize the quarterly project proposal with budget estimates",
+      "deadline": "2025-02-02",
+      "completed": false,
+      "createdAt": "2025-01-27T10:00:00.000Z",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Team meeting preparation",
+      "description": "Prepare agenda and materials for the upcoming team meeting",
+      "deadline": "2025-01-30",
+      "completed": false,
+      "createdAt": "2025-01-27T11:00:00.000Z",
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "title": "Master JavaScript",
+      "description": "Continue learning advanced JavaScript concepts and patterns",
+      "deadline": "2025-02-15",
+      "completed": false,
+      "createdAt": "2025-01-27T12:00:00.000Z",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "title": "Practice CSS Grid",
+      "description": "Build responsive layouts using CSS Grid",
+      "deadline": null,
+      "completed": true,
+      "createdAt": "2025-01-27T13:00:00.000Z",
+      "priority": "low"
+    },
+    {
+      "title": "Task6",
+      "description": "sfsdf",
+      "deadline": "2025-07-02",
+      "priority": "medium",
+      "createdAt": "2025-06-29T02:46:45.561Z",
+      "completed": false,
+      "id": 5
+    }
+  ]
+}
