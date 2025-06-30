@@ -302,25 +302,6 @@ const App = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Assign To
-                  </label>
-                  <select
-                    value={formData.assignedTo}
-                    onChange={(e) => setFormData({ ...formData, assignedTo: e.target.value })}
-                    disabled={currentUser.role !== 'admin'}
-                    className={`w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 ${
-                      currentUser.role !== 'admin' ? 'bg-gray-100 cursor-not-allowed text-gray-500' : 'focus:ring-blue-500'
-                    }`}
-                  >
-                    <option value="">Select user</option>
-                    {userList.map(user => (
-                      <option key={user} value={user}>{user}</option>
-                    ))}
-                  </select>
-                </div>
-
                 <div className="flex gap-3 pt-4">
                   <button
                     type="submit"
