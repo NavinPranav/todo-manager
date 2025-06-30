@@ -88,7 +88,7 @@ const App = () => {
           priority: formData.priority || 'medium'
         });
         setEditingTodo(null);
-        fetchTodos
+        setShowForm(false);
       } else {
         await addTodo({
           title: formData.title.trim(),
