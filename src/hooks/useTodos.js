@@ -32,9 +32,8 @@ export const useTodos = () => {
 
   const updateTodo = async (id, updates) => {
     try {
-      const updatedTodo = await todoService.updateTodo(id, updates);
+      await todoService.updateTodo(id, updates);
       fetchTodos();
-      return updatedTodo;
     } catch (err) {
       setError(err.message);
       throw err;
