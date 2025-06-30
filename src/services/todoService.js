@@ -3,7 +3,7 @@ const API_BASE_URL = 'http://localhost:3001';
 class TodoService {
   async getAllTodos() {
     try {
-      const response = await fetch(`http://localhost:8080/api/tasks`);
+      const response = await fetch(`https://todo-manager-api-production.up.railway.app/api/tasks`);
       if (!response.ok) {
         throw new Error('Failed to fetch todos');
       }
@@ -16,7 +16,7 @@ class TodoService {
 
   async createTodo(todoData) {
     try {
-      const response = await fetch(`http://localhost:8080/api/insert`, {
+      const response = await fetch(`https://todo-manager-api-production.up.railway.app/api/insert`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ class TodoService {
 
   async updateTodo(id, updates) {
     try {
-      const response = await fetch(`http://localhost:8080/api/update?id=${id}`, {
+      const response = await fetch(`https://todo-manager-api-production.up.railway.app/api/update?id=${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ class TodoService {
 
   async updateStatus(id, status) {
     try {
-      const response = await fetch(`http://localhost:8080/api/update-status?id=${id}`, {
+      const response = await fetch(`https://todo-manager-api-production.up.railway.app/api/update-status?id=${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
